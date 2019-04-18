@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 12538049876,
+  "duration": 2295358175,
   "status": "passed"
 });
 formatter.scenario({
@@ -89,46 +89,46 @@ formatter.match({
   "location": "Register.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 4153874828,
+  "duration": 2680043527,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_navigate_to_Account_Registration_page()"
 });
 formatter.result({
-  "duration": 35939,
+  "duration": 1382993603,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_provide_all_the_below_valid_details(DataTable)"
 });
 formatter.result({
-  "duration": 1743162,
+  "duration": 766543971,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_select_the_privacy_policy()"
 });
 formatter.result({
-  "duration": 29924,
+  "duration": 125905191,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_click_on_continue_button()"
 });
 formatter.result({
-  "duration": 36075,
+  "duration": 480374164,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_should_see_that_the_User_Account_has_been_successfully_created()"
 });
 formatter.result({
-  "duration": 31190,
+  "duration": 64570527,
   "status": "passed"
 });
 formatter.after({
-  "duration": 76644089,
+  "duration": 75145098,
   "status": "passed"
 });
 });

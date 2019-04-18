@@ -15,3 +15,33 @@
 2019-04-15 22:03:52 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started813131188
 2019-04-15 22:03:56 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
 2019-04-15 22:03:56 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: passed
+2019-04-17 13:55:41 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 13:55:41 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 13:55:55 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started453398853
+2019-04-17 13:55:59 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 13:55:59 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: failed
+2019-04-17 14:02:15 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 14:02:15 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 14:02:17 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started1193398802
+2019-04-17 14:02:21 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 14:02:21 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: passed
+2019-04-17 16:23:26 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 16:23:26 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 16:23:30 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started453398853
+2019-04-17 16:23:35 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 16:23:35 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: passed
+2019-04-17 17:52:23 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 17:52:23 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 17:52:27 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started1275009283
+2019-04-17 17:52:33 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 17:52:33 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: passed
+2019-04-17 19:46:20 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 19:46:20 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 19:46:22 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started453398853
+2019-04-17 19:46:28 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 19:46:28 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: failed
+2019-04-17 19:53:12 [INFO ] [Hooks] - [setUp] Scenario Started: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 19:53:12 [INFO ] [Browser] - [startBrowser] Selected Browser is: chrome
+2019-04-17 19:53:14 [INFO ] [Browser] - [startBrowser] Chrome Browser is Started1193398802
+2019-04-17 19:53:20 [INFO ] [Hooks] - [closeBrowser] Scenario Completed: Verify wheather the user is able to register into the application by providing all the fields
+2019-04-17 19:53:20 [INFO ] [Hooks] - [closeBrowser] Scenario Status is: passed
