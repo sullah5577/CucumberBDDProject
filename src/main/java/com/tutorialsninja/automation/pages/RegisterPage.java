@@ -43,6 +43,33 @@ public class RegisterPage {
     @FindBy(xpath = "//p[contains(text(),'Congratulations! Your new account has been successfully created!')]")
     public static WebElement accountCreated;
 
+    @FindBy(linkText = "Register")
+    public static WebElement registerBreadCrum;
+
+    @FindBy(css = "input[id='input-firstname']+div")
+    public static WebElement firstNameWarning;
+
+    @FindBy(css = "input[id='input-lastname']+div")
+    public static WebElement lastNameWarning;
+
+    @FindBy(css = "input[id='input-email']+div")
+    public static WebElement emailWarning;
+
+    @FindBy(css = "input[id='input-telephone']+div")
+    public static WebElement telephoneWarning;
+
+    @FindBy(css = "input[id='input-password']+div")
+    public static WebElement passwordWarning;
+
+    @FindBy(css = "div[class$='alert-dismissible']")
+    public static WebElement mainWarning;
+
+    @FindBy(css = "input[name='newsletter'][value='1']")
+    public static WebElement newsLetter;
+
+    @FindBy(css = "input[name='agree'][value='1']")
+    public static WebElement privacyPolicySelect;
+
     public static void enterAllDetail(DataTable dataTable){
         Map<String,String> map =  dataTable.asMap(String.class,String.class);
         Elements.TypeText(firstName,map.get("FirstName"));
@@ -51,6 +78,10 @@ public class RegisterPage {
         Elements.TypeText(telephoneNumber,map.get("Telephone"));
         Elements.TypeText(password,map.get("Password"));
         Elements.TypeText(passwordConfirm,map.get("Password"));
+    }
+
+    public static void verifyManditoryWarnings(){
+
     }
 
 }

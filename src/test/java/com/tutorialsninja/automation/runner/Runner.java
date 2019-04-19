@@ -11,8 +11,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features={"src/test/resources/FeatureFiles"},
         glue={"classpath:com.tutorialsninja.automation.stepdef"},
-        plugin={"html:target/cucumber_html_report"}
-        //tags={"@Register","@One"}
+        plugin={"html:target/cucumber_html_report"},
+        tags={"@Register","@Three"}
         )
 public class Runner {
 

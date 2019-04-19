@@ -63,4 +63,47 @@ public class Register {
 
     }
 
+    @Then("^I should see that the User Account is not created$")
+    public void i_should_see_that_the_User_Account_is_not_created()  {
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.registerBreadCrum));
+
+    }
+
+    @And("^I should see the error messages informing the user to fill the mandatory fields$")
+    public void i_should_see_the_error_messages_informing_the_user_to_fill_the_mandatory_fields(){
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.firstNameWarning));
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.lastNameWarning));
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.emailWarning));
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.telephoneWarning));
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.passwordWarning));
+        Assert.assertTrue(Elements.isDisplayed(RegisterPage.mainWarning));
+
+    }
+
+    @And("^I subscribe to Newsletter$")
+    public void i_subscribe_to_Newsletter(){
+        Elements.click(RegisterPage.newsLetter);
+
+
+    }
+
+    @And("^I select the Privacy Policy$")
+    public void i_select_the_Privacy_Policy(){
+        Elements.click(RegisterPage.privacyPolicySelect);
+
+    }
+
+    @And("^I click on Continue button$")
+    public void i_click_on_Continue_button(){
+        Elements.click(RegisterPage.continueBtn);
+
+    }
+
+    @Then("^I should see that the User Account has successfully created$")
+    public void i_should_see_that_the_User_Account_has_successfully_created(){
+        Assert.assertTrue(Elements.isDisplayed(AccountSuccessPage.successBreadCrumb));
+
+    }
+
+
 }

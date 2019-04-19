@@ -7,29 +7,39 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2295358175,
+  "duration": 11330109987,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Verify wheather the user is able to register into the application by providing all the fields",
+  "line": 26,
+  "name": "Verify whether the user is able to register into the application by opting for Newsletter subscription",
   "description": "",
-  "id": "registration-functionality-scenarios;verify-wheather-the-user-is-able-to-register-into-the-application-by-providing-all-the-fields",
+  "id": "registration-functionality-scenarios;verify-whether-the-user-is-able-to-register-into-the-application-by-opting-for-newsletter-subscription",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 25,
+      "name": "@Register"
+    },
+    {
+      "line": 25,
+      "name": "@Three"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
+  "line": 27,
   "name": "I launch the application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 28,
   "name": "I navigate to Account Registration page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 6,
+  "line": 29,
   "name": "I provide all the below valid details",
   "rows": [
     {
@@ -37,98 +47,110 @@ formatter.step({
         "FirstName",
         "Shofi"
       ],
-      "line": 7
+      "line": 30
     },
     {
       "cells": [
         "LastName",
         "Ullah"
       ],
-      "line": 8
+      "line": 31
     },
     {
       "cells": [
         "Email",
         "ullah.ss@gmail.com"
       ],
-      "line": 9
+      "line": 32
     },
     {
       "cells": [
         "Telephone",
         "7185550123"
       ],
-      "line": 10
+      "line": 33
     },
     {
       "cells": [
         "Password",
         "jj187ten"
       ],
-      "line": 11
+      "line": 34
     }
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
-  "name": "I select the privacy policy",
+  "line": 35,
+  "name": "I subscribe to Newsletter",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
-  "name": "I click on continue button",
+  "line": 36,
+  "name": "I select the Privacy Policy",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
-  "name": "I should see that the User Account has been successfully created",
+  "line": 37,
+  "name": "I click on Continue button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "I should see that the User Account has successfully created",
   "keyword": "Then "
 });
 formatter.match({
   "location": "Register.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 2680043527,
+  "duration": 3187498341,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_navigate_to_Account_Registration_page()"
 });
 formatter.result({
-  "duration": 1382993603,
+  "duration": 1390722163,
   "status": "passed"
 });
 formatter.match({
   "location": "Register.i_provide_all_the_below_valid_details(DataTable)"
 });
 formatter.result({
-  "duration": 766543971,
+  "duration": 736254483,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register.i_select_the_privacy_policy()"
+  "location": "Register.i_subscribe_to_Newsletter()"
 });
 formatter.result({
-  "duration": 125905191,
+  "duration": 113711705,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register.i_click_on_continue_button()"
+  "location": "Register.i_select_the_Privacy_Policy()"
 });
 formatter.result({
-  "duration": 480374164,
+  "duration": 103306016,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register.i_should_see_that_the_User_Account_has_been_successfully_created()"
+  "location": "Register.i_click_on_Continue_button()"
 });
 formatter.result({
-  "duration": 64570527,
+  "duration": 457086178,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Register.i_should_see_that_the_User_Account_has_successfully_created()"
+});
+formatter.result({
+  "duration": 67573136,
   "status": "passed"
 });
 formatter.after({
-  "duration": 75145098,
+  "duration": 74590231,
   "status": "passed"
 });
 });
