@@ -2,6 +2,7 @@ package com.tutorialsninja.automation.stepdef;
 
 import com.tutorialsninja.automation.base.Base;
 import com.tutorialsninja.automation.framework.Elements;
+import com.tutorialsninja.automation.framework.Waits;
 import com.tutorialsninja.automation.pages.AccountSuccessPage;
 import com.tutorialsninja.automation.pages.HeadersSection;
 import com.tutorialsninja.automation.pages.RegisterPage;
@@ -35,7 +36,7 @@ public class Register {
 
     @When("^I provide all the below valid details$")
     public void i_provide_all_the_below_valid_details(DataTable dataTable) {
-        RegisterPage.enterAllDetail(dataTable);
+        RegisterPage.enterAllDetail(dataTable,"unique");
 
 
 
@@ -44,7 +45,7 @@ public class Register {
     @And("^I select the privacy policy$")
     public void i_select_the_privacy_policy() {
 
-        Elements.click(RegisterPage.privacyPolicy);
+        Elements.click(RegisterPage.privacyPolicySelect);
 
     }
 
@@ -91,17 +92,33 @@ public class Register {
     public void i_select_the_Privacy_Policy(){
         Elements.click(RegisterPage.privacyPolicySelect);
 
+
     }
 
     @And("^I click on Continue button$")
     public void i_click_on_Continue_button(){
-        Elements.click(RegisterPage.continueBtn);
+
 
     }
 
     @Then("^I should see that the User Account has successfully created$")
     public void i_should_see_that_the_User_Account_has_successfully_created(){
-        Assert.assertTrue(Elements.isDisplayed(AccountSuccessPage.successBreadCrumb));
+
+
+    }
+
+    @When("^I provide the below duplicate details into the fields$")
+    public void i_provide_the_below_duplicate_details_into_the_fields(DataTable dataTable)  {
+
+        RegisterPage.enterAllDetail(dataTable,"duplicate");
+
+    }
+
+    @Then("^I should see the warning message stating that the user is already created$")
+    public void i_should_see_the_warning_message_stating_that_the_user_is_already_created() {
+
+        Assert.assertTrue(Elements.VerifyTextEquals(RegisterPage.mainWarning,"Warning: E-Mail Address is already registered!"));
+
 
     }
 

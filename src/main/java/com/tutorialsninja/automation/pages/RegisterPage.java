@@ -70,15 +70,24 @@ public class RegisterPage {
     @FindBy(css = "input[name='agree'][value='1']")
     public static WebElement privacyPolicySelect;
 
-    public static void enterAllDetail(DataTable dataTable){
+    public static void enterAllDetail(DataTable dataTable, String detailsType){
         Map<String,String> map =  dataTable.asMap(String.class,String.class);
         Elements.TypeText(firstName,map.get("FirstName"));
         Elements.TypeText(lastName,map.get("LastName"));
-        Elements.TypeText(emailAddress,System.currentTimeMillis()+map.get("Email"));
+
         Elements.TypeText(telephoneNumber,map.get("Telephone"));
         Elements.TypeText(password,map.get("Password"));
         Elements.TypeText(passwordConfirm,map.get("Password"));
+
+        if (detailsType.equalsIgnoreCase("duplicate")){
+            Elements.TypeText(emailAddress,map.get("Email"));
+        }else {
+            Elements.TypeText(emailAddress,System.currentTimeMillis()+map.get("Email"));
+        }
     }
+
+
+
 
     public static void verifyManditoryWarnings(){
 

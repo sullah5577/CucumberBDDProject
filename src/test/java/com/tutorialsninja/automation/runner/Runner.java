@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
         features={"src/test/resources/FeatureFiles"},
         glue={"classpath:com.tutorialsninja.automation.stepdef"},
         plugin={"html:target/cucumber_html_report"},
-        tags={"@Register","@Three"}
+        tags={"@Register"}
         )
 public class Runner {
 
