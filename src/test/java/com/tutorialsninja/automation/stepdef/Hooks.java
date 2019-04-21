@@ -1,5 +1,7 @@
 package com.tutorialsninja.automation.stepdef;
 
+import com.cucumber.listener.Reporter;
+import com.google.common.io.Files;
 import com.tutorialsninja.automation.framework.Waits;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -12,6 +14,12 @@ import com.tutorialsninja.automation.util.PathHelper;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Hooks {
     private static Logger log = Logger.getLogger(Hooks.class);
@@ -27,9 +35,28 @@ public class Hooks {
     }
 	@After
 	public void closeBrowser(Scenario scenario){
-	if(scenario.isFailed()){
+        if (scenario.isFailed()) {
+            String screenshotName = scenario.getName().replaceAll(" ", "_");
+            try {
+                //This takes a screenshot from the driver at save it to the specified location
+                TakesScreenshot ts = (TakesScreenshot) Base.driver;
+                File sourcePath = ts.getScreenshotAs(OutputType.FILE);
+
+                //Building up the destination path for the screenshot to save
+                //Also make sure to create a folder 'screenshots' with in the cucumber-report folder
+                File destinationPath = new File(System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + screenshotName + ".png");
+
+                //Copy taken screenshot from source location to destination location
+                Files.copy(sourcePath, destinationPath);
+
+                //This attach the specified screenshot to the test
+                Reporter.addScreenCaptureFromPath(destinationPath.toString());
+            } catch (IOException e) {
+            }
+        }
+        /*if(scenario.isFailed()){
 	scenario.embed(Browser.takeScreenshot(), "image/png");
-	}
+	}*/
 	log.info("Scenario Completed: "+scenario.getName());
 	log.info("Scenario Status is: "+scenario.getStatus());
 	Base.driver.quit();

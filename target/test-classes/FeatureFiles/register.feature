@@ -34,5 +34,19 @@ Feature: Registration functionality scenarios
       | Password  | jj187ten           |
     And I subscribe to Newsletter
     And I select the Privacy Policy
-    And I click on Continue button
+    And I click on continue button
     Then I should see that the User Account has successfully created
+
+  @Register @Four
+  Scenario: Verify whether the user is restricted from registring a duplicate account
+    Given I launch the application
+    And I navigate to Account Registration page
+    When I provide the below duplicate details into the fields
+      | FirstName | Shofi                  |
+      | LastName  | Ullah                 |
+      | Email     | ullah.ss@gmail.com |
+      | Telephone | 7185550123            |
+      | Password  | jj187ten                |
+    And I select the Privacy Policy
+    And I click on continue button
+    Then I should see the warning message stating that the user is already created

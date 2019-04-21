@@ -33,5 +33,8 @@ public class PropertyFileReader implements ConfigurationReader{
 		return Integer.parseInt(properties.getProperty("PageLoadTimeOut"));
 	}
 
+
+
+
 	
 	}
