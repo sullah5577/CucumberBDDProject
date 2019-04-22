@@ -16,7 +16,7 @@ import java.io.File;
         glue = {"classpath:com.ninjastore.automation.stepdef"},
         //plugin = {"html:target/cucumber_html_report"},
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-        tags = {"@Search"}
+        tags = {"@Orders","@One"}
 )
 public class Runner {
 

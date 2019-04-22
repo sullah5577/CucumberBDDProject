@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SearchResultsPage {
 
-    public SearchResultsPage(){
-        PageFactory.initElements(Base.driver,this);
+    public SearchResultsPage() {
+        PageFactory.initElements(Base.driver, this);
     }
 
 
@@ -17,4 +17,10 @@ public class SearchResultsPage {
 
     @FindBy(css = "input[id='button-search']+h2+p")
     public static WebElement searchResultMessage;
+
+    @FindBy(xpath = "//span[text()='Add to Cart']")
+    public static WebElement addToCart;
+
+
+
 }

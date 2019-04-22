@@ -1,6 +1,7 @@
 package com.ninjastore.automation.pages;
 
 import com.ninjastore.automation.base.Base;
+import com.ninjastore.automation.framework.Elements;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +26,24 @@ public class HeadersSection  {
 
     @FindBy(css = "i[class$='fa-search']")
     public static WebElement searchBtn;
+
+    @FindBy(xpath = "//span[text()='Shopping Cart']")
+    public static WebElement shoppingCart;
+
+
+    public static void navigateToLoginPage(){
+        Elements.click(myAccountLink);
+        Elements.click(login);
+    }
+
+    public static void navigateToShoppingCartPage(){
+        Elements.click(shoppingCart);
+    }
+
+    public static void searchForProduct(){
+        Elements.TypeText(searchField,Base.reader.getProduct());
+        Elements.click(searchBtn);
+    }
 
 
 

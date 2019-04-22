@@ -30,6 +30,11 @@ public class LoginPage {
 
 
 
+    public static void logIntoAccount(){
+        Elements.TypeText(userName,Base.reader.getUsername());
+        Elements.TypeText(password,Base.reader.getPassword());
+        Elements.click(loginBtn);
+    }
 
 
     public static void doLogin(String Username, String Password){
