@@ -18,7 +18,7 @@ import java.io.File;
         plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
         tags = {"@Register,@Login,@Search,@Orders"}
 )
-public class Runner {
+public class TestRunner {
 
     public static void writeExtentReport() {
         Reporter.loadXMLConfig(new File("ConfigurationFile/extent-config.xml"));

@@ -2,6 +2,7 @@ package com.ninjastore.automation.pages;
 
 import com.ninjastore.automation.base.Base;
 import com.ninjastore.automation.framework.Elements;
+import com.ninjastore.automation.framework.Waits;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -73,6 +74,7 @@ public class CheckoutPage {
         Elements.click(deliveryMethodContinueBtn);
         Elements.selectCheckBox(termsAndConditions);
         Elements.click(paymentMethodContinueBtn);
+        Waits.waitUntilElementLocated(10,placeOrder);
         Elements.click(placeOrder);
     }
 
