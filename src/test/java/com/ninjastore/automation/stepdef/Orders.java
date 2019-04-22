@@ -44,7 +44,7 @@ public class Orders {
     public void i_place_an_order() {
 
        CheckoutPage.placeOrder();
-       
+
     }
 
     @Then("^I should see that the order is placed successfully$")
