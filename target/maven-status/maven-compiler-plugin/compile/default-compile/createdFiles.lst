@@ -1,0 +1,17 @@
+com/ninjastore/automation/pages/ShoppingCartPage.class
+com/ninjastore/automation/framework/Test.class
+com/ninjastore/automation/pages/RegisterPage.class
+com/ninjastore/automation/pages/SearchResultsPage.class
+com/ninjastore/automation/config/PropertyFileReader.class
+com/ninjastore/automation/pages/HeadersSection.class
+com/ninjastore/automation/pages/MyAccountPage.class
+com/ninjastore/automation/framework/Browser.class
+com/ninjastore/automation/pages/ForgottenPasswordPage.class
+com/ninjastore/automation/pages/AccountSuccessPage.class
+com/ninjastore/automation/pages/LoginPage.class
+com/ninjastore/automation/base/Base.class
+com/ninjastore/automation/framework/Waits.class
+com/ninjastore/automation/pages/CheckoutPage.class
+com/ninjastore/automation/framework/Elements.class
+com/ninjastore/automation/config/ConfigurationReader.class
+com/ninjastore/automation/util/PathHelper.class
